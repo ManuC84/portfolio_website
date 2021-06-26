@@ -19,6 +19,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
+import Slider from "react-slick";
 
 const Projects = () => (
   <Section nopadding id="projects">

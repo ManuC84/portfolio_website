@@ -6,6 +6,7 @@ import Technologies from "../components/Technologies/Technologies";
 import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -13,9 +14,27 @@ const Home = () => {
       <Section grid>
         <Hero />
         <BgAnimation />
+        <div
+          style={{
+            position: "absolute",
+            top: 20,
+            right: 30,
+            borderRadius: "50%",
+          }}
+        >
+          <img
+            src="/images/manu-logo2.png"
+            style={{
+              height: 500,
+              width: 500,
+              borderRadius: "50%",
+              boxShadow: "0 0 8px 8px white inset",
+            }}
+          />
+        </div>
       </Section>
-      <Technologies />
       <Projects />
+      <Technologies />
     </Layout>
   );
 };
