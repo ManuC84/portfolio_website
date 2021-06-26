@@ -14,7 +14,7 @@ const Hero = () => (
       <SectionTitle main center>
         Hi! I'm Manu <br />
         Welcome To <br />
-        My Portfolio
+        My World
       </SectionTitle>
       <SectionText>
         I'm an aspiring full-stack developer who is passionate about learning

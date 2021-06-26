@@ -18,6 +18,7 @@ export const Section = styled.section`
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;
+    grid-template-columns: 2fr;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
