@@ -20,6 +20,7 @@ import {
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 import Slider from "react-slick";
+import SlideUpWhenVisible from "../../utils/slideUpWhenVisible";
 
 const Projects = () => (
   <Section nopadding id="projects">
@@ -28,28 +29,30 @@ const Projects = () => (
     <GridContainer>
       {projects.map(
         ({ title, description, image, tags, source, visit, id }) => (
-          <BlogCard key={id}>
-            <Img src={image} />
-            <TitleContent>
-              <HeaderThree title>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo>{description}</CardInfo>
-            <div>
+          <SlideUpWhenVisible>
+            <BlogCard key={id}>
+              <Img src={image} />
               <TitleContent>
-                Stack
-                <TagList>
-                  {tags.map((tag, i) => (
-                    <Tag key={i}>{tag}</Tag>
-                  ))}
-                </TagList>
+                <HeaderThree title>{title}</HeaderThree>
+                <Hr />
               </TitleContent>
-            </div>
-            <UtilityList>
-              <ExternalLinks href={visit}>Code</ExternalLinks>
-              <ExternalLinks href={source}>Source</ExternalLinks>
-            </UtilityList>
-          </BlogCard>
+              <CardInfo>{description}</CardInfo>
+              <div>
+                <TitleContent>
+                  Stack
+                  <TagList>
+                    {tags.map((tag, i) => (
+                      <Tag key={i}>{tag}</Tag>
+                    ))}
+                  </TagList>
+                </TitleContent>
+              </div>
+              <UtilityList>
+                <ExternalLinks href={visit}>Code</ExternalLinks>
+                <ExternalLinks href={source}>Source</ExternalLinks>
+              </UtilityList>
+            </BlogCard>
+          </SlideUpWhenVisible>
         )
       )}
     </GridContainer>

@@ -6,6 +6,7 @@ export const AvatarContainer = styled.div`
   width: 500px;
   border-radius: 50%;
   box-shadow: 0 0 20px 8px white inset;
+  transform: scale(0.8);
 
   @media ${(props) => props.theme.breakpoints.lg} {
     height: 400px;

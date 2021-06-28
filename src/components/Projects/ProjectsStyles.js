@@ -93,6 +93,7 @@ export const ExternalLinks = styled.a`
   background: #6b3030;
   border-radius: 15px;
   transition: 0.5s;
+  margin-bottom: 10px;
   &:hover {
     background: #801414;
   }
