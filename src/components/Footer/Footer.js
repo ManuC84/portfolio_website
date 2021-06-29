@@ -1,14 +1,57 @@
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import React from "react";
 
-import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { Section } from "../../styles/GlobalComponents";
+
+import { SocialIcons } from "../Header/HeaderStyles";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+import { DiCssdeck } from "react-icons/di";
+import {
+  CompanyContainer,
+  FooterWrapper,
+  LinkColumn,
+  LinkItem,
+  LinkList,
+  LinkTitle,
+  Slogan,
+  SocialContainer,
+  SocialIconsContainer,
+} from "./FooterStyles";
 
 const Footer = () => {
   return (
-    <div>
-      Footer
-    </div>
+    <Section>
+      <FooterWrapper>
+        <LinkList>
+          <Slogan>
+            Made with{" "}
+            <span role="img" aria-label="sheep">
+              ❤️
+            </span>{" "}
+            by Manuel Cufré using Next.js
+          </Slogan>
+          <SocialContainer>
+            <SocialIconsContainer>
+              <SocialIcons href="https://github.com/ManuC84" target="_blank">
+                <AiFillGithub size="3rem" />
+              </SocialIcons>
+              <SocialIcons
+                href="https://www.linkedin.com/in/manuel-cufre/"
+                target="_blank"
+              >
+                <AiFillLinkedin size="3rem" />
+              </SocialIcons>
+              <SocialIcons href="/" target="_blank">
+                <AiFillTwitterCircle size="3rem" />
+              </SocialIcons>
+            </SocialIconsContainer>
+          </SocialContainer>
+        </LinkList>
+      </FooterWrapper>
+    </Section>
   );
 };
 

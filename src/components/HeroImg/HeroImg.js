@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const HeroImg = () => {
   return (
-    <motion.div animate={{ scale: 1.1 }} transition={{ duration: 0.5 }}>
+    <motion.div animate={{ scale: 1.1 }} transition={{ duration: 0.6 }}>
       <AvatarContainer>
         {svgBg.animatedBg}
         <img src="/images/manu-logo3.png" />

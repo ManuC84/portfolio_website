@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import {
   AiFillGithub,
-  AiFillInstagram,
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from "react-icons/ai";
@@ -55,13 +54,16 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/ManuC84">
+      <SocialIcons href="https://github.com/ManuC84" target="_blank">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/manuel-cufre/">
+      <SocialIcons
+        href="https://www.linkedin.com/in/manuel-cufre/"
+        target="_blank"
+      >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="/">
+      <SocialIcons href="/" target="_blank">
         <AiFillTwitterCircle size="3rem" />
       </SocialIcons>
     </Div3>
