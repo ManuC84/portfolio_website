@@ -9,14 +9,14 @@ export const ContactSection = styled.div`
 
 export const ContactContainer = styled.div`
   position: relative;
-  min-width: 1100px;
+  /* min-width: 1100px; */
   min-height: 550px;
   display: flex;
   z-index: 1000;
   margin-top: 20px;
 
   @media only screen and (max-width: 1200px) {
-    width: 90%;
+    /* width: 90%; */
     min-width: auto;
     margin: 20px;
     box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
