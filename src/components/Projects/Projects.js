@@ -29,8 +29,8 @@ const Projects = () => (
     <GridContainer>
       {projects.map(
         ({ title, description, image, tags, source, visit, id }) => (
-          <SlideUpWhenVisible>
-            <BlogCard key={id}>
+          <SlideUpWhenVisible key={id}>
+            <BlogCard>
               <Img src={image} />
               <TitleContent>
                 <HeaderThree title="true">{title}</HeaderThree>
@@ -39,7 +39,7 @@ const Projects = () => (
               <CardInfo>{description}</CardInfo>
               <div>
                 <TitleContent>
-                  Stack
+                  <h4 style={{ marginTop: 10, color: "#d0bb57" }}>Stack</h4>
                   <TagList>
                     {tags.map((tag, i) => (
                       <Tag key={i}>{tag}</Tag>

@@ -19,6 +19,8 @@ import {
   InfoItem,
 } from "./ContactStyles";
 
+import SlideUpWhenVisible from "../../utils/slideUpWhenVisible";
+
 import { AiOutlineMail } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdLocationOn } from "react-icons/md";
@@ -43,76 +45,78 @@ const Contact = () => {
     <Section contact id="contact">
       <SectionDivider />
       <SectionTitle main>Contact</SectionTitle>
-      <ContactContainer>
-        <ContactInfo>
-          <img src="/images/photo-manu.jpg" alt="photo-manu" />
-          <InfoContainer>
-            <h2>Contact Info</h2>
-            <InfoItemContainer>
-              <InfoItem>
-                <AiOutlineMail />
-                <a
-                  href="mailto:mcufre84@gmail.com"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h5>mcufre84@gmail.com</h5>
-                </a>
-              </InfoItem>
-              <InfoItem>
-                <FiPhoneCall />
-                <a
-                  href="tel:680832169"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  {" "}
-                  <h5>680832169</h5>
-                </a>
-              </InfoItem>
-              <InfoItem>
-                <IconContext.Provider value={{ color: "white" }}>
-                  <MdLocationOn color="white" />
-                </IconContext.Provider>
-                <a
-                  href="https://goo.gl/maps/uyKNdPVwqSGkpSYZ9"
-                  target="_blank"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h5>Barcelona, Spain</h5>
-                </a>
-              </InfoItem>
-            </InfoItemContainer>
-          </InfoContainer>
-        </ContactInfo>
-        <ContactForm onSubmit={handleSubmit}>
-          <h2>Get In Touch</h2>
-          <FormBox>
-            <InputBox className="w50">
-              <input type="text" required />
-              <span>First Name</span>
-            </InputBox>
-            <InputBox className="w50">
-              <input type="text" required />
-              <span>Last Name</span>
-            </InputBox>
-            <InputBox className="w50">
-              <input type="email" required />
-              <span>Email Address</span>
-            </InputBox>
-            <InputBox className="w50">
-              <input type="text" required />
-              <span>Mobile Number</span>
-            </InputBox>
-            <InputBox className="w100">
-              <textarea required />
-              <span>Write your message here...</span>
-            </InputBox>
+      <SlideUpWhenVisible>
+        <ContactContainer>
+          <ContactInfo>
+            <img src="/images/photo-manu.jpg" alt="photo-manu" />
+            <InfoContainer>
+              <h2>Contact Info</h2>
+              <InfoItemContainer>
+                <InfoItem>
+                  <AiOutlineMail />
+                  <a
+                    href="mailto:mcufre84@gmail.com"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <h5>mcufre84@gmail.com</h5>
+                  </a>
+                </InfoItem>
+                <InfoItem>
+                  <FiPhoneCall />
+                  <a
+                    href="tel:680832169"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    {" "}
+                    <h5>680832169</h5>
+                  </a>
+                </InfoItem>
+                <InfoItem>
+                  <IconContext.Provider value={{ color: "white" }}>
+                    <MdLocationOn color="white" />
+                  </IconContext.Provider>
+                  <a
+                    href="https://goo.gl/maps/uyKNdPVwqSGkpSYZ9"
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <h5>Barcelona, Spain</h5>
+                  </a>
+                </InfoItem>
+              </InfoItemContainer>
+            </InfoContainer>
+          </ContactInfo>
+          <ContactForm onSubmit={handleSubmit}>
+            <h2>Get In Touch</h2>
+            <FormBox>
+              <InputBox className="w50">
+                <input type="text" required />
+                <span>First Name</span>
+              </InputBox>
+              <InputBox className="w50">
+                <input type="text" required />
+                <span>Last Name</span>
+              </InputBox>
+              <InputBox className="w50">
+                <input type="email" required />
+                <span>Email Address</span>
+              </InputBox>
+              <InputBox className="w50">
+                <input type="text" required />
+                <span>Mobile Number</span>
+              </InputBox>
+              <InputBox className="w100">
+                <textarea required />
+                <span>Write your message here...</span>
+              </InputBox>
 
-            <InputBox className="w100">
-              <input type="submit" value="Send" className="submitButton" />
-            </InputBox>
-          </FormBox>
-        </ContactForm>
-      </ContactContainer>
+              <InputBox className="w100">
+                <input type="submit" value="Send" className="submitButton" />
+              </InputBox>
+            </FormBox>
+          </ContactForm>
+        </ContactContainer>
+      </SlideUpWhenVisible>
     </Section>
   );
 };

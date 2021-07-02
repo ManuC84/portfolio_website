@@ -22,7 +22,7 @@ export const projects = [
   {
     title: "Socket-Io Chat-App",
     description:
-      "This is a project I made in order to learn to use socket-io which is used for real-time notifications in my main project Freelycomment. It's made with React and the server with Express.js. It's fully functional and can be tested.",
+      "This is a project I made in order to learn to use socket-io which is used for real-time notifications on my main project Freelycomment. It's made with React and the server with Express.js. It's fully functional and can be tested.",
     image: "/images/chat-app-demo.png",
     tags: ["React", "Socket-Io", "Express"],
     source: "https://github.com/ManuC84/client",
@@ -39,12 +39,4 @@ export const projects = [
     visit: "https://shielded-plains-40931.herokuapp.com/",
     id: 3,
   },
-];
-
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
 ];

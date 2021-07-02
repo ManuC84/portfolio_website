@@ -44,7 +44,10 @@ const Footer = () => {
               >
                 <AiFillLinkedin size="3rem" />
               </SocialIcons>
-              <SocialIcons href="/" target="_blank">
+              <SocialIcons
+                href="https://twitter.com/manuelcufre3"
+                target="_blank"
+              >
                 <AiFillTwitterCircle size="3rem" />
               </SocialIcons>
             </SocialIconsContainer>
