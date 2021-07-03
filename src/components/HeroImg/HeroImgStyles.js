@@ -22,6 +22,15 @@ export const AvatarContainer = styled.div`
 
   animation: ${shadowTransition} 2s alternate infinite;
 
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+  }
+
   @media ${(props) => props.theme.breakpoints.lg} {
     height: 400px;
     width: 400px;
@@ -36,12 +45,5 @@ export const AvatarContainer = styled.div`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
-  }
-
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
   }
 `;

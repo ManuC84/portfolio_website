@@ -8,7 +8,7 @@ const HeroImg = () => {
     <motion.div animate={{ scale: 1.1 }} transition={{ duration: 0.6 }}>
       <AvatarContainer>
         {svgBg.animatedBg}
-        <img src="/images/manu-logo5.png" style={{ height: 500, width: 500 }} />
+        <img src="/images/manu-logo5.png" />
       </AvatarContainer>
     </motion.div>
   );

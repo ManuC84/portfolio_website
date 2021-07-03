@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ContactSection = styled.div`
   display: flex;
@@ -211,5 +212,24 @@ export const InputBox = styled.div`
 
   .submitButton:hover {
     background: #212d45;
+  }
+`;
+
+export const AlertMessage = styled(motion.div)`
+  &.success-msg,
+  &.error-msg {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+  }
+
+  &.success-msg {
+    color: #270;
+    background-color: #dff2bf;
+  }
+
+  &.error-msg {
+    color: #d8000c;
+    background-color: #ffbaba;
   }
 `;

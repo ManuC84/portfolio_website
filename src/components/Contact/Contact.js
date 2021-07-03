@@ -1,5 +1,5 @@
-import React from "react";
-// import emailjs from "emailjs-com";
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 import {
   Section,
@@ -17,28 +17,48 @@ import {
   InfoContainer,
   InfoItemContainer,
   InfoItem,
+  AlertMessage,
 } from "./ContactStyles";
 
 import SlideUpWhenVisible from "../../utils/slideUpWhenVisible";
+import { AnimatePresence } from "framer-motion";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdLocationOn } from "react-icons/md";
 import { IconContext } from "react-icons/lib";
+import { TiTick } from "react-icons/ti";
+import { IoIosClose } from "react-icons/io";
 
 const Contact = () => {
+  const [contactSuccess, setContactSuccess] = useState("");
+  const [contactError, setContactError] = useState("");
+  const formRef = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(`gmail`, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        e.target,
+        process.env.NEXT_PUBLIC_USER_ID
+      )
       .then(
         (result) => {
-          alert("Message Sent, We will get back to you shortly", result.text);
+          setContactSuccess(`Message Sent, We will get back to you shortly`);
+          setTimeout(() => {
+            setContactSuccess("");
+          }, 5000);
         },
         (error) => {
-          alert("An error occurred, Please try again", error.text);
+          setContactError(`An error occurred, Please try again`);
+          setTimeout(() => {
+            setContactError("");
+          }, 5000);
         }
       );
+    formRef.current.reset();
   };
 
   return (
@@ -86,27 +106,27 @@ const Contact = () => {
               </InfoItemContainer>
             </InfoContainer>
           </ContactInfo>
-          <ContactForm onSubmit={handleSubmit}>
+          <ContactForm ref={formRef} onSubmit={handleSubmit}>
             <h2>Get In Touch</h2>
             <FormBox>
               <InputBox className="w50">
-                <input type="text" required />
+                <input type="text" name="firstname" required />
                 <span>First Name</span>
               </InputBox>
               <InputBox className="w50">
-                <input type="text" required />
+                <input type="text" name="lastname" required />
                 <span>Last Name</span>
               </InputBox>
               <InputBox className="w50">
-                <input type="email" required />
+                <input type="email" name="email" required />
                 <span>Email Address</span>
               </InputBox>
               <InputBox className="w50">
-                <input type="text" required />
+                <input type="text" name="phone" required />
                 <span>Mobile Number</span>
               </InputBox>
               <InputBox className="w100">
-                <textarea required />
+                <textarea name="message" required />
                 <span>Write your message here...</span>
               </InputBox>
 
@@ -114,6 +134,26 @@ const Contact = () => {
                 <input type="submit" value="Send" className="submitButton" />
               </InputBox>
             </FormBox>
+            <AnimatePresence>
+              {(contactSuccess || contactError) && (
+                <AlertMessage
+                  className={contactSuccess ? "success-msg" : "error-msg"}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  {contactError ? (
+                    <>
+                      <IoIosClose /> {contactError}
+                    </>
+                  ) : (
+                    <>
+                      <TiTick /> {contactSuccess}
+                    </>
+                  )}
+                </AlertMessage>
+              )}
+            </AnimatePresence>
           </ContactForm>
         </ContactContainer>
       </SlideUpWhenVisible>
