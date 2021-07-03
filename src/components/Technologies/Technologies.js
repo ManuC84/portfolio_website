@@ -7,7 +7,7 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import SlideUpWhenVisible from "../../utils/slideUpWhenVisible";
+import SlideUpWhenVisible from "../../utils/SlideUpWhenVisible";
 import {
   List,
   ListContainer,
