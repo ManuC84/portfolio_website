@@ -5,3 +5,7 @@ module.exports = withTM({
     webpack5: true,
   },
 });
+
+module.exports = {
+  target: "serverless",
+};
