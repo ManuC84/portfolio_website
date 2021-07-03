@@ -29,7 +29,7 @@ const Projects = () => (
     <GridContainer>
       {projects.map(
         ({ title, description, image, tags, source, visit, id }) => (
-          <SlideUpWhenVisible key={id}>
+          <SlideUpWhenVisible key={id} threshold={0.01}>
             <BlogCard>
               <Img src={image} />
               <TitleContent>

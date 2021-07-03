@@ -27,9 +27,13 @@ export const BlogCard = styled.div`
   text-align: center;
   width: 400px;
   transition: all 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
+
+  @media all and (min-width: 1024px) {
+    &:hover {
+      transform: scale(1.1);
+    }
   }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
