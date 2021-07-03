@@ -20,7 +20,7 @@ import {
   AlertMessage,
 } from "./ContactStyles";
 
-import SlideUpWhenVisible from "../../utils/slideUpWhenVisible";
+import SlideUpWhenVisible from "../../utils/SlideUpWhenVisible";
 import { AnimatePresence } from "framer-motion";
 
 import { AiOutlineMail } from "react-icons/ai";

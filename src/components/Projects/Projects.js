@@ -20,7 +20,7 @@ import {
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 import Slider from "react-slick";
-import SlideUpWhenVisible from "../../utils/slideUpWhenVisible";
+import SlideUpWhenVisible from "../../utils/SlideUpWhenVisible";
 
 const Projects = () => (
   <Section nopadding id="projects">
