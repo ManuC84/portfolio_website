@@ -38,7 +38,7 @@ const Hero = () => (
 
         <motion.div variants={item}>
           <SectionText>
-            I'm a Web-Developer who is passionate about learning new
+            I'm a motivated Web-Developer who is passionate about learning new
             technologies and working hard and smart to bring awesome full-stack
             projects to life.
           </SectionText>
