@@ -86,6 +86,56 @@ export const SectionTitle = styled.h1`
   }
 `;
 
+export const SectionSubTitle = styled.h2`
+  font-weight: 800;
+  font-size: ${(props) => (props.main ? "65px" : "56px")};
+  line-height: ${(props) => (props.main ? "72px" : "56px")};
+  width: max-content;
+  max-width: 100%;
+  background: radial-gradient(#ffffff, rgba(255, 255, 255, 0.4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
+  background-size: 200% auto;
+  animation: ${backgroundTransition} 3s linear infinite;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: ${(props) => (props.main ? "56px" : "48px")};
+    line-height: ${(props) => (props.main ? "56px" : "48px")};
+    margin-bottom: 12px;
+    padding: ${(props) => (props.main ? "40px 0 12px" : "0")};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => (props.main ? "50px" : "32px")};
+    line-height: ${(props) => (props.main ? "50px" : "40px")};
+    margin-bottom: 8px;
+    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
+    max-width: 100%;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => (props.main ? "50px" : "32px")};
+    line-height: ${(props) => (props.main ? "50px" : "40px")};
+    margin-bottom: 8px;
+    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
+    max-width: 100%;
+  }
+  @media all and (max-width: 320px) {
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => (props.main ? "40px" : "32px")};
+    line-height: ${(props) => (props.main ? "45px" : "40px")};
+    margin-bottom: 8px;
+    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
+    max-width: 100%;
+  }
+`;
+
 export const SectionText = styled.p`
   max-width: 800px;
   font-size: 24px;

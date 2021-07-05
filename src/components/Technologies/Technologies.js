@@ -5,7 +5,7 @@ import {
   Section,
   SectionDivider,
   SectionText,
-  SectionTitle,
+  SectionSubTitle,
 } from "../../styles/GlobalComponents";
 import SlideUpWhenVisible from "../../utils/SlideUpWhenVisible";
 import {
@@ -19,7 +19,7 @@ import {
 const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
-    <SectionTitle main>About</SectionTitle>
+    <SectionSubTitle main>About</SectionSubTitle>
     <SlideUpWhenVisible>
       <SectionText>
         While my main focus has been Javascript both in the front-end and

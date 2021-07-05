@@ -16,7 +16,7 @@ import {
 import {
   Section,
   SectionDivider,
-  SectionTitle,
+  SectionSubTitle,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 import Slider from "react-slick";
@@ -26,7 +26,7 @@ import ReactReadMoreReadLess from "react-read-more-read-less";
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionSubTitle main>Projects</SectionSubTitle>
     <GridContainer>
       {projects.map(
         ({ title, description, image, tags, source, visit, id }) => (

@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import {
   Section,
   SectionDivider,
-  SectionTitle,
+  SectionSubTitle,
 } from "../../styles/GlobalComponents";
 
 import {
@@ -64,11 +64,15 @@ const Contact = () => {
   return (
     <Section contact id="contact">
       <SectionDivider />
-      <SectionTitle main>Contact</SectionTitle>
+      <SectionSubTitle main>Contact</SectionSubTitle>
       <SlideUpWhenVisible>
         <ContactContainer>
           <ContactInfo>
-            <img src="/images/photo-manu.jpg" alt="contact-photo" loading="lazy" />
+            <img
+              src="/images/photo-manu.jpg"
+              alt="contact-photo"
+              loading="lazy"
+            />
             <InfoContainer>
               <h2>Contact Info</h2>
               <InfoItemContainer>
