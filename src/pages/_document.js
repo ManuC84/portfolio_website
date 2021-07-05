@@ -37,7 +37,7 @@ export default class MyDocument extends Document {
             name="description"
             content="I'm a highly motivated Web-Developer who is passionate about
             learning new technologies and working hard and smart to bring
-            awesome full-stack projects to life."
+            awesome full-stack applications to life."
           />
           <title>Web-developer portfolio for Manuel Cufré</title>
           <link rel="canonical" href="https://www.manuelcufre.com/" />
@@ -53,7 +53,7 @@ export default class MyDocument extends Document {
             property="og:description"
             content="I'm a highly motivated Web-Developer who is passionate about
             learning new technologies and working hard and smart to bring
-            awesome full-stack projects to life."
+            awesome full-stack applications to life."
           />
           <meta
             property="og:image"
