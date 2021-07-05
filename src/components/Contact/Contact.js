@@ -68,7 +68,7 @@ const Contact = () => {
       <SlideUpWhenVisible>
         <ContactContainer>
           <ContactInfo>
-            <img src="/images/photo-manu.jpg" alt="photo-manu" />
+            <img src="/images/photo-manu.jpg" alt="contact-photo" loading="lazy" />
             <InfoContainer>
               <h2>Contact Info</h2>
               <InfoItemContainer>

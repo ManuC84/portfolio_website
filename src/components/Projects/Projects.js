@@ -32,7 +32,7 @@ const Projects = () => (
         ({ title, description, image, tags, source, visit, id }) => (
           <SlideUpWhenVisible key={id} threshold={0.01}>
             <BlogCard>
-              <Img src={image} />
+              <Img src={image} alt={`project-image-${id}`} loading="lazy" />
               <TitleContent>
                 <HeaderThree title="true">{title}</HeaderThree>
                 <Hr />

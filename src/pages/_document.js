@@ -40,6 +40,8 @@ export default class MyDocument extends Document {
             awesome full-stack projects to life."
           />
           <title>Web-developer portfolio for Manuel Cufré</title>
+          <link rel="canonical" href="https://www.manuelcufre.com/" />
+          <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:creator" content="@manuelcufre3" />
           <meta property="og:url" content="https://www.manuelcufre.com/" />
@@ -53,7 +55,7 @@ export default class MyDocument extends Document {
             learning new technologies and working hard and smart to bring
             awesome full-stack projects to life."
           />
-          <meta property="og:image" content="/images/manu-logo5.png" />
+          <meta property="og:image" content="/images/social-image.png" />
           <link
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
