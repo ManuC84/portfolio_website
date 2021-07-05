@@ -21,6 +21,7 @@ import {
 import { projects } from "../../constants/constants";
 import Slider from "react-slick";
 import SlideUpWhenVisible from "../../utils/SlideUpWhenVisible";
+import ReactReadMoreReadLess from "react-read-more-read-less";
 
 const Projects = () => (
   <Section nopadding id="projects">
@@ -36,7 +37,15 @@ const Projects = () => (
                 <HeaderThree title="true">{title}</HeaderThree>
                 <Hr />
               </TitleContent>
-              <CardInfo>{description}</CardInfo>
+              <CardInfo>
+                <ReactReadMoreReadLess
+                  charLimit={300}
+                  readMoreText={"Read more ▼"}
+                  readLessText={"Read less ▲"}
+                >
+                  {description}
+                </ReactReadMoreReadLess>
+              </CardInfo>
               <div>
                 <TitleContent>
                   <h4 style={{ marginTop: 10, color: "#d0bb57" }}>Stack</h4>
