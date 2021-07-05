@@ -40,7 +40,7 @@ const Hero = () => (
           <SectionText>
             I'm a highly motivated Web-Developer who is passionate about
             learning new technologies and working hard and smart to bring
-            awesome full-stack projects to life.
+            awesome full-stack applications to life.
           </SectionText>
         </motion.div>
         <motion.div variants={item}>
