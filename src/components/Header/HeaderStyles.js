@@ -44,24 +44,26 @@ export const Div2 = styled.div`
     border-radius: 5px;
     transition: width 0.2s ease-in;
   }
-  #nav-projects {
-    &:hover {
-      .nav-effect.projects {
-        width: 100%;
+  @media only screen and (min-width: 1024px) {
+    #nav-projects {
+      &:hover {
+        .nav-effect.projects {
+          width: 100%;
+        }
       }
     }
-  }
-  #nav-tech {
-    &:hover {
-      .nav-effect.tech {
-        width: 100%;
+    #nav-tech {
+      &:hover {
+        .nav-effect.tech {
+          width: 100%;
+        }
       }
     }
-  }
-  #nav-contact {
-    &:hover {
-      .nav-effect.contact {
-        width: 100%;
+    #nav-contact {
+      &:hover {
+        .nav-effect.contact {
+          width: 100%;
+        }
       }
     }
   }
