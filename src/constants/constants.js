@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Freelycomment",
     description:
-      "Freelycomment is my main and most amibitious project. It's still in development(this is only a tech demo) and will be released to the public when finished as a fully fledged social network. Currently it's being refactored to use redux toolkit functionality to the fullest and to better normalize data. Excuse the lack of styling as I haven't yet started working on that area. It features real-time notifications with socket-io(only custom users for now, Google users coming soon). You can use any url to create a post and then comment and like other comments. It's URL based so anyone who searches for the same URL will end up in the same post.",
+      "Freelycomment is my main project right now. It's still in development(link below is only a tech demo) and will be released to the public when finished as a fully fledged social network. Currently it's being refactored to use redux toolkit functionality to the fullest and to better normalize data. Excuse the lack of styling as I haven't yet started working on that area. It features real-time notifications with socket-io(only custom users for now, Google users coming soon). You can use any url to create a post and then comment and like other comments. It's URL based so anyone who searches for the same URL will end up in the same post.",
     image: "/images/freely-comment-thumb.png",
     tags: ["MongoDb", "Express", "React", "Redux"],
     source: "https://github.com/ManuC84/frontend",
