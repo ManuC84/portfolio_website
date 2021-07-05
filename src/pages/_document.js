@@ -31,10 +31,15 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta charSet="utf-8" />
+          <meta
+            name="description"
+            content="I'm a highly motivated Web-Developer who is passionate about
+            learning new technologies and working hard and smart to bring
+            awesome full-stack projects to life."
           />
+          <title>Web-developer portfolio for Manuel Cufré</title>
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:creator" content="@manuelcufre3" />
           <meta property="og:url" content="https://www.manuelcufre.com/" />
@@ -49,6 +54,10 @@ export default class MyDocument extends Document {
             awesome full-stack projects to life."
           />
           <meta property="og:image" content="/images/manu-logo5.png" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
