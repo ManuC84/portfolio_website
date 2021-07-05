@@ -24,11 +24,11 @@ const Technologies = () => (
       <SectionText>
         While my main focus has been Javascript both in the front-end and
         back-end, specializing in React.js and Express.js, I've also taken
-        courses and dabbled in PHP and specially Laravel of which I'm a big fan
-        . Regarding databases I have experience with MongoDb and MySql. My
-        favorite CSS libraries/frameworks are Material-UI and Styled-Components.
-        For state management I specially enjoy Redux-toolkit and have worked
-        extensively with it.
+        courses and dabbled in PHP, specially Laravel of which I'm a big fan.
+        Regarding databases I have experience with MongoDb, MySql and Firebase.
+        My favorite CSS libraries/frameworks are Material-UI and
+        Styled-Components. For state management I specially enjoy Redux-toolkit
+        and have worked extensively with it.
       </SectionText>
     </SlideUpWhenVisible>
     <SlideUpWhenVisible>
