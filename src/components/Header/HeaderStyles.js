@@ -27,6 +27,7 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
@@ -35,6 +36,36 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
+
+  .nav-effect {
+    height: 2px;
+    width: 0;
+    background-image: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+    border-radius: 5px;
+    transition: width 0.2s ease-in;
+  }
+  #nav-projects {
+    &:hover {
+      .nav-effect.projects {
+        width: 100%;
+      }
+    }
+  }
+  #nav-tech {
+    &:hover {
+      .nav-effect.tech {
+        width: 100%;
+      }
+    }
+  }
+  #nav-contact {
+    &:hover {
+      .nav-effect.contact {
+        width: 100%;
+      }
+    }
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
