@@ -31,15 +31,13 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta charSet="utf-8" />
           <meta
             name="description"
             content="I'm a highly motivated Web-Developer who is passionate about
             learning new technologies and working hard and smart to bring
             awesome full-stack applications to life."
           />
-          <title>Web-developer portfolio for Manuel Cufré</title>
+
           <link rel="canonical" href="https://www.manuelcufre.com/" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary" />

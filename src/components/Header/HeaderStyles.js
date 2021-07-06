@@ -91,9 +91,9 @@ export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
+    align-items: flex-start;
     grid-area: 1 / 4 / 2 / 6;
   }
 `;
