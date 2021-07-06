@@ -30,7 +30,7 @@ export const Div1 = styled.div`
   .brand-logo {
     width: 30px;
     height: auto;
-    margin-right: 5px;
+    margin-right: 8px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
