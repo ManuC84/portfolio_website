@@ -37,7 +37,6 @@ export default class MyDocument extends Document {
             learning new technologies and working hard and smart to bring
             awesome full-stack applications to life."
           />
-
           <link rel="canonical" href="https://www.manuelcufre.com/" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary" />
