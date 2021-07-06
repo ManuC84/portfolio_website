@@ -52,10 +52,14 @@ export default class MyDocument extends Document {
             learning new technologies and working hard and smart to bring
             awesome full-stack applications to life."
           />
+
           <meta
             property="og:image"
-            content="https://raw.githubusercontent.com/ManuC84/portfolio_website/master/public/images/social-image.png"
+            content="https://raw.githubusercontent.com/ManuC84/portfolio_website/master/public/images/social-image-facebook.png"
           />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="700" />
 
           <meta
             property="og:image"
