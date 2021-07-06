@@ -24,14 +24,13 @@ const arrowAnimation = keyframes`
 `;
 
 export const BackToTopIcon1 = styled.div`
-  /* opacity: 0; */
   animation: ${arrowAnimation} 1s linear infinite 0.1s;
 `;
 export const BackToTopIcon2 = styled.div`
-  /* opacity: 0; */
+  height: 1.5em;
   animation: ${arrowAnimation} 1s linear infinite 0.2s;
 `;
 export const BackToTopIcon3 = styled.div`
-  /* opacity: 0; */
+  height: 1.5em;
   animation: ${arrowAnimation} 1s linear infinite 0.3s;
 `;
