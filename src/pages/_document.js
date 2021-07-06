@@ -56,6 +56,7 @@ export default class MyDocument extends Document {
             property="og:image"
             content="https://raw.githubusercontent.com/ManuC84/portfolio_website/master/public/images/social-image.png"
           />
+
           <meta
             property="og:image"
             content="https://raw.githubusercontent.com/ManuC84/portfolio_website/master/public/images/social-image-whatsapp.png"
@@ -63,6 +64,7 @@ export default class MyDocument extends Document {
           <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="400" />
           <meta property="og:image:height" content="300" />
+
           <link
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
