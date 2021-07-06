@@ -7,6 +7,7 @@ import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import HeroImg from "../components/HeroImg/HeroImg";
 import Footer from "../components/Footer/Footer";
+import BackToTop from "../utils/backToTopIcon/BackToTop";
 
 const Home = () => {
   return (

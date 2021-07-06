@@ -44,6 +44,9 @@ export const ContactInfo = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+
   border-radius: 10px;
 
   img {
@@ -59,7 +62,10 @@ export const ContactInfo = styled.div`
     box-shadow: none;
     margin: 0;
     border-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
   }
+
   @media only screen and (max-width: 991px) {
     width: 100%;
     height: auto;
