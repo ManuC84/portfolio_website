@@ -4,8 +4,10 @@ import Head from "next/head";
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <title>Web-developer portfolio for Manuel Cufré</title>
+      </Head>
       <Theme>
-        <Head>Web-developer portfolio for Manuel Cufré</Head>
         <Component {...pageProps} />
       </Theme>
     </>
