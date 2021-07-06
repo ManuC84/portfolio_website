@@ -27,7 +27,22 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
+  .brand-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+  }
 
+  @media ${(props) => props.theme.breakpoints.md} {
+    .brand-name {
+      display: none;
+    }
+    .brand-logo {
+      width: 35px;
+      height: 35px;
+      margin: 0 8px;
+    }
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }

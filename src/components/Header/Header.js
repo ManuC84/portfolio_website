@@ -31,8 +31,12 @@ const Header = () => (
             marginBottom: 20,
           }}
         >
-          <DiCssdeck size="3rem" />
-          <Span>Manuel Cufré</Span>
+          <img
+            src="/images/brand-logo.png"
+            alt="brand-logo"
+            className="brand-logo"
+          />
+          <Span className="brand-name">Manuel Cufré</Span>
         </a>
       </Link>
     </Div1>
