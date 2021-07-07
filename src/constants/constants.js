@@ -12,7 +12,7 @@ export const projects = [
   {
     title: "Disney Plus Clone",
     description:
-      "This is a project I made mainly to focus on front-end and UI/UX skills. It also helped me learn how to use Firebase database and auth. It doesn't feature much functionality so it's more of a font-end demo. You can only login and then enjoy the cool styling and effects.",
+      "This is a project I made mainly to focus on front-end and UI/UX skills. It also helped me learn how to use Firebase database and auth. It doesn't feature much functionality so it's more of a front-end demo. You can only login and then enjoy the cool styling and effects.",
     image: "/images/disney-plus-thumb.png",
     tags: ["React", "Firebase", "Styled-Components"],
     source: "https://github.com/ManuC84/youtube-disney-clone",
