@@ -33,7 +33,7 @@ export const Div1 = styled.div`
     margin-right: 8px;
   }
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media all and (max-width: 930px) {
     .brand-name {
       display: none;
     }
