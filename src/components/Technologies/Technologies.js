@@ -28,7 +28,8 @@ const Technologies = () => (
         have experience with MongoDb, MySql and Firebase. My favorite CSS
         libraries/frameworks are Material-UI and Styled-Components. For state
         management I specially enjoy Redux-toolkit and have worked extensively
-        with it.
+        with it. I'm also discovering Python on my own by working on a very
+        exciting personal side-project that will be featured here soon.
       </SectionText>
     </SlideUpWhenVisible>
     <SlideUpWhenVisible>
