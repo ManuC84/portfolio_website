@@ -18,7 +18,7 @@ export const BackToTopIconContainer = styled.div`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     right: 5px;
-    bottom: 10px;
+    bottom: 20px;
     align-items: flex-end;
   }
 `;
