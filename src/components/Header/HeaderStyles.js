@@ -167,6 +167,10 @@ export const SocialIcons = styled.a`
   color: white;
   border-radius: 50px;
 
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 8px;
+  }
+
   &:hover {
     background-color: #212d45;
     transform: scale(1.2);
