@@ -155,6 +155,7 @@ export const SectionText = styled.p`
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
+    padding-right: 16px;
   }
 `;
 

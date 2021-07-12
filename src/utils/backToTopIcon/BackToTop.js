@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  BackToTopIcon1,
-  BackToTopIcon2,
-  BackToTopIcon3,
-  BackToTopIconContainer,
-} from "./BackToTopStyles";
+import { BackToTopIcon, BackToTopIconContainer } from "./BackToTopStyles";
 
 import { FaChevronUp } from "react-icons/fa";
 
@@ -35,15 +30,9 @@ const BackToTop = () => {
   return (
     isVisible && (
       <BackToTopIconContainer onClick={scrollToTop}>
-        <BackToTopIcon3>
+        <BackToTopIcon>
           <FaChevronUp font-size="40px" />
-        </BackToTopIcon3>
-        <BackToTopIcon2>
-          <FaChevronUp font-size="40px" />
-        </BackToTopIcon2>
-        <BackToTopIcon1>
-          <FaChevronUp font-size="40px" />
-        </BackToTopIcon1>
+        </BackToTopIcon>
       </BackToTopIconContainer>
     )
   );
