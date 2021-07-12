@@ -30,11 +30,11 @@ export const Section = styled.section`
   }
 `;
 
-const backgroundTransition = keyframes`
-  to {
-      background-position: 200% center;
-    }
-`;
+// const backgroundTransition = keyframes`
+//   to {
+//       background-position: 200% center;
+//     }
+// `;
 
 export const SectionTitle = styled.h1`
   font-weight: 800;
@@ -48,7 +48,7 @@ export const SectionTitle = styled.h1`
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
   background-size: 200% auto;
-  animation: ${backgroundTransition} 3s linear infinite;
+  /* animation: ${backgroundTransition} 3s linear infinite; */
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};
@@ -98,7 +98,7 @@ export const SectionSubTitle = styled.h2`
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
   background-size: 200% auto;
-  animation: ${backgroundTransition} 3s linear infinite;
+  /* animation: ${backgroundTransition} 3s linear infinite; */
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};
