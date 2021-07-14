@@ -88,11 +88,11 @@ const Contact = () => {
                 <InfoItem>
                   <FiPhoneCall />
                   <a
-                    href="tel:680832169"
+                    href="tel:+34680832169"
                     style={{ textDecoration: "none", color: "white" }}
                   >
                     {" "}
-                    <h5>680832169</h5>
+                    <h5>+34680832169</h5>
                   </a>
                 </InfoItem>
                 <InfoItem>
