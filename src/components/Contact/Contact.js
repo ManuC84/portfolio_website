@@ -82,7 +82,7 @@ const Contact = () => {
                     href="mailto:mcufre84@gmail.com"
                     style={{ textDecoration: "none", color: "white" }}
                   >
-                    <h5>mcufre84@gmail.com</h5>
+                    <h5>contact@manuelcufre.com</h5>
                   </a>
                 </InfoItem>
                 <InfoItem>
