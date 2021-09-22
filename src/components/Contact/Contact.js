@@ -130,7 +130,7 @@ const Contact = () => {
                 <span>Email Address</span>
               </InputBox>
               <InputBox className="w50">
-                <input type="text" name="phone" required />
+                <input type="number" name="phone" required />
                 <span>Mobile Number</span>
               </InputBox>
               <InputBox className="w100">
