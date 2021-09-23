@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const ContactSection = styled.div`
   display: flex;
@@ -147,6 +147,11 @@ export const FormBox = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 30px;
+  .css-18btcsr {
+    margin-left: 25px;
+    bottom: 15px;
+    background: #fff;
+  }
 `;
 
 export const InputBox = styled.div`
