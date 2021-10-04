@@ -35,6 +35,7 @@ const Contact = () => {
   const [contactSuccess, setContactSuccess] = useState('');
   const [contactError, setContactError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [input, setInput] = useState('');
   const formRef = useRef();
 
   const handleSubmit = (e) => {
@@ -125,9 +126,15 @@ const Contact = () => {
                 <input type="text" name="lastname" required />
                 <span>Last Name</span>
               </InputBox>
-              <InputBox className="w50">
-                <input type="email" name="email" required />
-                <span>Email Address</span>
+              <InputBox className="w50 ">
+                <input
+                  value={input}
+                  onInput={(e) => setInput(e.target.value)}
+                  type="email"
+                  name="email"
+                  required
+                />
+                <span className={input && 'email-textarea'}>Email Address</span>
               </InputBox>
               <InputBox className="w50">
                 <input type="number" name="phone" required />

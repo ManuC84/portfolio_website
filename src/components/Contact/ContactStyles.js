@@ -158,6 +158,13 @@ export const InputBox = styled.div`
   position: relative;
   margin-bottom: 35px;
 
+  span.email-textarea {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
   span {
     color: black;
   }
