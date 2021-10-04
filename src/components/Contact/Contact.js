@@ -64,6 +64,7 @@ const Contact = () => {
         },
       );
     formRef.current.reset();
+    setInput('');
   };
 
   return (
