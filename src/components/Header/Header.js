@@ -1,13 +1,10 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
-} from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
-import { CgSun } from "react-icons/cg";
-import { HiMoon } from "react-icons/hi";
+} from 'react-icons/ai';
 
 import {
   Container,
@@ -17,7 +14,7 @@ import {
   NavLink,
   SocialIcons,
   Span,
-} from "./HeaderStyles";
+} from './HeaderStyles';
 
 const Header = () => (
   <Container>
@@ -25,9 +22,9 @@ const Header = () => (
       <Link href="/">
         <a
           style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
+            display: 'flex',
+            alignItems: 'center',
+            color: 'white',
             marginBottom: 20,
           }}
         >

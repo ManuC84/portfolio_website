@@ -1,4 +1,5 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const BackToTopIconContainer = styled.div`
   position: fixed;
@@ -23,7 +24,7 @@ export const BackToTopIconContainer = styled.div`
   }
 `;
 
-export const BackToTopIcon = styled.div`
+export const BackToTopIcon = styled(motion.div)`
   height: 1.5em;
   width: 70%;
   display: flex;
@@ -37,9 +38,9 @@ export const BackToTopIcon = styled.div`
   border: 1px solid white;
   border-radius: 5px;
   transition: all 0.2s ease-in;
-  &:hover {
+  /* &:hover {
     transform: scale(1.1);
-  }
+  } */
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 50%;
   }

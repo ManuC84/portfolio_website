@@ -1,13 +1,14 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 import {
   Section,
   SectionText,
   SectionTitle,
-} from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection, HeroButton } from "./HeroStyles";
-import Link from "next/link";
+} from '../../styles/GlobalComponents';
+import Button from '../../styles/GlobalComponents/Button';
+import { LeftSection, HeroButton, HeroButton2 } from './HeroStyles';
+import Link from 'next/link';
+import { BsPaperclip } from 'react-icons/bs';
 
 const container = {
   hidden: { opacity: 0 },
@@ -43,10 +44,20 @@ const Hero = () => (
             awesome full-stack applications to life.
           </SectionText>
         </motion.div>
-        <motion.div variants={item}>
+        <motion.div
+          style={{ display: 'flex', paddingBottom: 32 }}
+          variants={item}
+        >
           <Link href="#tech">
-            <Button>Learn More</Button>
+            <HeroButton>Learn More</HeroButton>
           </Link>
+          <HeroButton2
+            href="/documents/cv-figma-v5-links-compressed.pdf"
+            target="_blank"
+          >
+            <BsPaperclip />
+            Get CV
+          </HeroButton2>
         </motion.div>
       </motion.div>
     </LeftSection>

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { BackToTopIcon, BackToTopIconContainer } from "./BackToTopStyles";
+import React, { useEffect, useState } from 'react';
+import { BackToTopIcon, BackToTopIconContainer } from './BackToTopStyles';
 
-import { FaChevronUp } from "react-icons/fa";
+import { FaChevronUp } from 'react-icons/fa';
 
 const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,7 +9,7 @@ const BackToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -22,15 +22,22 @@ const BackToTop = () => {
       }
     };
 
-    window.addEventListener("scroll", toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
   return (
     isVisible && (
       <BackToTopIconContainer onClick={scrollToTop}>
-        <BackToTopIcon>
+        <BackToTopIcon
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{
+            type: 'tween',
+          }}
+          whileHover={{ scale: 1.1, transition: { delay: 0 } }}
+        >
           <FaChevronUp font-size="40px" />
         </BackToTopIcon>
       </BackToTopIconContainer>
