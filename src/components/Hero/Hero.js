@@ -30,7 +30,7 @@ const Hero = () => (
     <LeftSection>
       <motion.div variants={container} initial="hidden" animate="show">
         <motion.div variants={item}>
-          <SectionTitle main center>
+          <SectionTitle main center noMarginTop>
             Hi! I'm Manu <br />
             Welcome To <br />
             My Portfolio

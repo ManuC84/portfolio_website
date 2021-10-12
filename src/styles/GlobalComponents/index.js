@@ -45,8 +45,9 @@ export const SectionTitle = styled.h1`
   background: radial-gradient(#ffffff, rgba(255, 255, 255, 0.4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
-  padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
+  margin-top: ${(props) => (props.noMarginTop ? '0' : '16px')};
+  margin-bottom: ${(props) => (props.noMarginBottom ? '0' : '16px')};
+  padding: ${(props) => (props.main ? '20px 0 16px 0' : '0')};
   background-size: 200% auto;
   /* animation: ${backgroundTransition} 3s linear infinite; */
 
