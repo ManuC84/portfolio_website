@@ -1,14 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import {
-  Section,
-  SectionText,
-  SectionTitle,
-} from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, HeroButton, HeroButton2 } from './HeroStyles';
-import Link from 'next/link';
-import { BsPaperclip } from 'react-icons/bs';
+import React from "react";
+import { motion } from "framer-motion";
+import { Section, SectionText, SectionTitle } from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection, HeroButton, HeroButton2 } from "./HeroStyles";
+import Link from "next/link";
+import { BsPaperclip } from "react-icons/bs";
 
 const container = {
   hidden: { opacity: 0 },
@@ -39,22 +35,15 @@ const Hero = () => (
 
         <motion.div variants={item}>
           <SectionText>
-            I'm a highly motivated Web-Developer who is passionate about
-            learning new technologies and working hard and smart to bring
-            awesome full-stack applications to life.
+            I'm a highly motivated Web-Developer who is passionate about learning new technologies
+            and working hard and smart to bring awesome full-stack applications to life.
           </SectionText>
         </motion.div>
-        <motion.div
-          style={{ display: 'flex', paddingBottom: 32 }}
-          variants={item}
-        >
+        <motion.div style={{ display: "flex", paddingBottom: 32 }} variants={item}>
           <Link href="#tech">
             <HeroButton>Learn More</HeroButton>
           </Link>
-          <HeroButton2
-            href="/documents/cv-figma-v5-links-compressed.pdf"
-            target="_blank"
-          >
+          <HeroButton2 href="/documents/ManuelCufre_CV_english_V1_links.pdf" target="_blank">
             <BsPaperclip />
             Get CV
           </HeroButton2>
