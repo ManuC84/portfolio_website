@@ -67,9 +67,6 @@ const Header = () => (
       >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://twitter.com/manuelcufre3" target="_blank">
-        <AiFillTwitterCircle size="3rem" />
-      </SocialIcons>
     </Div3>
   </Container>
 );
