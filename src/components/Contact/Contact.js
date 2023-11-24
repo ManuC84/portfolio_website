@@ -92,16 +92,6 @@ const Contact = () => {
                   </a>
                 </InfoItem>
                 <InfoItem>
-                  <FiPhoneCall />
-                  <a
-                    href="tel:+34680832169"
-                    style={{ textDecoration: 'none', color: 'white' }}
-                  >
-                    {' '}
-                    <h5>+34680832169</h5>
-                  </a>
-                </InfoItem>
-                <InfoItem>
                   <IconContext.Provider value={{ color: 'white' }}>
                     <MdLocationOn color="white" />
                   </IconContext.Provider>
